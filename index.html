@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Пополнение счёта в iOS-приложении Рокетбанка</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+
+    <style>
+        .slide {
+            background: #eee;
+        }
+
+        .slide img.cover {
+            box-shadow: 0 0 1em 0 #333;
+        }
+
+        .annotation {
+            position: absolute;
+            font-size: 0.6em;
+            line-height: 1.5em;
+            width: 250px;
+        }
+
+        .annotation h2 {
+            color: inherit;
+            font: inherit;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+
+        .annotation_left {
+            margin-left: -50px;
+        }
+
+        .annotation_right {
+            margin-left: 640px;
+            padding-top: 2.5em;
+        }
+    </style>
+</head>
+<body class="shower list">
+	<header class="caption">
+        <h1>Пополнение счёта в iOS-приложении <a href="https://rocketbank.ru" target="_blank">Рокетбанка</a></h1>
+		<p><a href="http://igor.lukanin.name" target="_blank">Игорь Луканин</a> о том, как всё плохо и как это
+            исправить</p>
+
+		<style>
+			.caption {
+				text-shadow: none;
+			}
+
+            .caption h1 {
+                color: #eee;
+            }
+
+            .caption p {
+                color: #ccc;
+            }
+
+			.caption a {
+				color: inherit;
+				background: linear-gradient(to top, currentColor, currentColor .075em, transparent .075em, transparent) repeat-x;
+			}
+		</style>
+	</header>
+    <section class="slide">
+        <div class="annotation annotation_left">
+            <h2>&nbsp;</h2>
+            <p>Как пополнить счёт с карты?</p>
+            <ul>
+                <li>открываем приложение</li>
+                <li>нажимаем кнопку с плюсом</li>
+                <li>выбираем одну из последних карт</li>
+                <li>вводим CVV-код и жмём кнопку</li>
+                <li>вводим сумму и жмём кнопку</li>
+                <li>дожидаемся пуша с кодиком</li>
+                <li>вводим кодик и жмём кнопку</li>
+                <li>видим экран с галкой</li>
+            </ul>
+            <p>Всё логично, без лишних кликов, и&nbsp;вряд ли могло быть проще.</p>
+            <p>Но после этого начинается ад.</p>
+        </div>
+        <img class="cover" src="images/IMG_1657.PNG">
+        <div class="annotation annotation_right">
+            <p>Чего мы хотим после пополнения счёта? Вернуться на&nbsp;главный экран и&nbsp;увидеть обновлённый баланс.</p>
+            <p>Для этого нужно нажать кнопку «Готово», верно?</p>
+        </div>
+    </section>
+    <section class="slide">
+        <div class="annotation annotation_left">
+            <h2>Не верно.</h2>
+            <p>Попадаем на экран с выбранной картой. Заполнен номер и CVV-код. Если нажмём «Далее», сможем ещё раз
+                пополнить счёт с этой карты.</p>
+            <p>Очевидно, нам это не нужно.</p>
+        </div>
+        <img class="cover" src="images/IMG_1658.PNG">
+        <div class="annotation annotation_right">
+            <p>Хотим вернуться на&nbsp;главный экран и&nbsp;увидеть обновлённый баланс.</p>
+            <p>Для этого нужно нажать кнопку «Отменить», верно?</p>
+        </div>
+    </section>
+    <section class="slide">
+        <div class="annotation annotation_left">
+            <h2>Не верно.</h2>
+            <p>Данные последней карты пропадают. Если заполним данные другой карты, сможем ещё раз пополнить счёт.</p>
+            <p>Очевидно, нам это не нужно.</p>
+        </div>
+        <img class="cover" src="images/IMG_1659.PNG">
+        <div class="annotation annotation_right">
+            <p>Хотим вернуться на&nbsp;главный экран и&nbsp;увидеть обновлённый баланс.</p>
+            <p>Для этого нужно ещё раз нажать кнопку «Отменить», верно?</p>
+        </div>
+    </section>
+    <section class="slide">
+        <div class="annotation annotation_left">
+            <h2>Не верно.</h2>
+            <p>Пропадает курсор из поля с номером карты. Если заполним данные другой карты или выберем последнюю карту, сможем ещё раз пополнить счёт.</p>
+            <p>Очевидно, нам это не нужно.</p>
+        </div>
+        <img class="cover" src="images/IMG_1660.PNG">
+        <div class="annotation annotation_right">
+            <p>Хотим вернуться на&nbsp;главный экран и&nbsp;увидеть обновлённый баланс.</p>
+            <p>Для этого нужно нажать кнопку «Назад», верно?</p>
+        </div>
+    </section>
+    <section class="slide">
+        <div class="annotation annotation_left">
+            <h2>Наконец-то!</h2>
+            <p>Хотя нет, постойте.</p>
+            <p>Вернулись на главный экран, но&nbsp;видим старый баланс.</p>
+        </div>
+        <img class="cover" src="images/IMG_1661.PNG">
+        <div class="annotation annotation_right">
+            <p>Нужно потянуть экран, чтобы&nbsp;он&nbsp;обновился, верно?</p>
+        </div>
+    </section>
+    <section class="slide">
+        <div class="annotation annotation_left">
+            <h2>Квест пройден.</h2>
+            <p>4 клика, один свайп.</p>
+            <p>Рокетбанк, не надо так!</p>
+        </div>
+        <img class="cover" src="images/IMG_1662.PNG">
+    </section>
+    <section class="slide">
+        <div class="annotation annotation_left">
+            <h2>Как исправить?</h2>
+            <p>Убрать navigation bar.</p>
+            <p>Добавить большую красивую кнопку по центру экрана, под пальцем.</p>
+            <p>После нажатия переходить на&nbsp;главный экран.</p>
+            <p>Обновлять баланс в фоне, чтобы сразу показать актуальный.</p>
+        </div>
+        <img class="cover" src="images/IMG_1657.PNG">
+        <div class="annotation annotation_right">
+            <p>Спасибо.</p>
+        </div>
+    </section>
+	<div class="progress"></div>
+	<script src="node_modules/shower-core/shower.min.js"></script>
+</body>
+</html>
